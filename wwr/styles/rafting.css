@@ -1,5 +1,10 @@
 
-// <weight>: Use a value from 100 to 900
+:root {
+    primary-color: #8AC926;
+    secondary-color: #1982C4;
+    accent-color-1: #FFCA3A;
+    accent-color-2: #FF595E;
+}
 
 h1 {
     font-family: "Passion One", serif;
@@ -9,5 +14,5 @@ h1 {
 body {
     font-family: "Truculenta", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 100;
 }
