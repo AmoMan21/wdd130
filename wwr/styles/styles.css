@@ -1,0 +1,13 @@
+
+// <weight>: Use a value from 100 to 900
+
+h1 {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+}
