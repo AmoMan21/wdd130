@@ -57,14 +57,14 @@ header {
     margin: 0;
     padding: 0;
 }
-.logo img {
-	max-height: 80px;
+.logo {
+	max-height: 40px;
     object-fit: contain;
 }
 
 nav {
 	text-align: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .navigation {
@@ -84,9 +84,9 @@ nav {
 
 .navigation a {
 	display: block;
-	color: navy;
-	padding: 10px;
-	text-decoration: none;
+	color: #FF595E;
+	padding: 40px;
+	text-decoration: underline;
 }
 
 .navigation a:hover {
