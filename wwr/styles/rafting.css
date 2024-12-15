@@ -1,18 +1,232 @@
 
 :root {
-    primary-color: #8AC926;
-    secondary-color: #1982C4;
-    accent-color-1: #FFCA3A;
-    accent-color-2: #FF595E;
+    --primary-color: #8AC926;
+    --secondary-color: #1982C4;
+    --accent-color-1: #FFCA3A;
+    --accent-color-2: #FF595E;
 }
 
-h1 {
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFCA3A;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* a {
+    text-decoration: underline;
+    color: inherit;
+} */
+
+div {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    padding: 1em;
+}
+
+/* HEADER SECTION */
+header {
+	display: grid;
+    grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 20px;
+	padding: 10px;
+	background-color: #1982C4;
+}
+
+.container1 .navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+	max-height: 80px;
+    object-fit: contain;
+}
+
+nav {
+	text-align: center;
+    gap: 15px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+}
+
+.container1 .navigation li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+/* header img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+  */
+/* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100rem;
+}
+ 
+nav ul li {
+    margin: 10;
+} */
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+ 
+/* .hero img {
+    width: 80%;
+    height: auto;
+    opacity: 0.8;
+} */
+ 
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #FF595E;
+}
+
+/* CONTENT SECTIONS */
+section {
+    padding: 2em;
+    background-color: #8AC926;
+    margin-bottom: 1em;
+}
+ 
+section h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #2c3e50;
+    border-bottom: 2px solid #FF595E;
+    padding-bottom: 0.5em;
+}
+ 
+section p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* .section-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1em;
+} */
+ 
+/* .section-images img {
+    border: 3px solid #FF595E;
+    border-radius: 5px;
+} */
+
+/* FOOTER */
+footer {
+    background-color: #FFCA3A;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+ 
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+ 
+.sociallinks {
+    max-width: 1px;
+    height: auto;
+    padding: 10em;
+}
+
+/* FOOTER
+footer {
+    background-color: #1982C4;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+ 
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+} */
+ 
+/* footer ul li img {
+    max-width: 30px;
+} */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+ 
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+
+/* h1 {
     font-family: "Passion One", serif;
     font-weight: 400;
-}
+    background-color: ;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+} */
 
-body {
+/* body {
     font-family: "Truculenta", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
-}
+} */
