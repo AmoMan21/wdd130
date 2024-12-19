@@ -91,7 +91,7 @@ nav {
 
 .navigation a:hover {
 	color: tomato;
-	font-weight: 900;
+	font-weight: 700;
 	text-decoration: underline;
 }
 
@@ -129,8 +129,30 @@ nav ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5em;
+    font-size: 100em;
     text-shadow: 2px 2px 4px #FF595E;
+}
+
+/* History Section */
+.history {
+    text-align: center;
+    background-color: #FFCA3A;
+    padding: 2em;
+}
+
+.history-layout {
+    display: flex;
+    grid-template-columns: 1fr auto 1fr; /* Two text blocks and an image in the center */
+    gap: 1em; /* Space between grid items */
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.history-layout img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px; /* Optional rounded corners */
 }
 
 /* CONTENT SECTIONS */
@@ -166,43 +188,28 @@ section p {
 
 /* FOOTER */
 footer {
-    background-color: #FFCA3A;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
- 
-footer ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1em;
-}
+    justify-content: space-between; /* Space between text and social links */
+    align-items: center; /* Vertically center the content */
+    padding: 1em 2em; /* Add padding for spacing */
+    background-color: #1982C4; /* Footer background color */
+    color: #fff; /* Text color */
+} 
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 12px; /* Adjust font size for footer text */
+  }
  
-.sociallinks {
-    max-width: 1px;
-    height: auto;
-    padding: 10em;
+.sociallinks { 
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 1em; /* Add space between social icons */
 }
 
-/* FOOTER
-footer {
-    background-color: #1982C4;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
- 
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-} */
- 
-/* footer ul li img {
-    max-width: 30px;
-} */
+.sociallinks img {
+    width: 50px; /* Set consistent size for icons */
+    height: auto; /* Maintain aspect ratio */
+  }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
